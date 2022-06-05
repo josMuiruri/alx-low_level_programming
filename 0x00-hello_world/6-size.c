@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entrypoint
+ * main - entrypoint
  *
  * Return: Always 0 (success)
  *
@@ -30,7 +30,7 @@ int main(void)
 
 	printf("Size of a long long int: %lu byte(s)\n", sizeof(alonglong));
 
-	printf("Size of a float: %lu byte(s)\n", sizeof(afloat);
+	printf("Size of a float: %lu byte(s)\n", sizeof(afloat));
 
 	return (0);
 
