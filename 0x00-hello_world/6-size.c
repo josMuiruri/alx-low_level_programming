@@ -16,7 +16,7 @@ int main(void)
 	int ainteger;
 
 	long along;
-	
+
 	long long alonglong;
 
 	float afloat;
