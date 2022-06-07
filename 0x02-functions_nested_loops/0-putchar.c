@@ -1,9 +1,14 @@
+#include <stdio.h>
 #include "main.h"
+
 /**
  * main - my entry point
- * Description: program that prints _putchar 
+ *
+ * prints out _putchar followed by anewline.
+ *
  * Return: 0
  */
+
 int main(void)
 {
 	char ch[8] = "_putchar";
