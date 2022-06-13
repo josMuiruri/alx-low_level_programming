@@ -1,7 +1,7 @@
-include "main.h"
+#include "main.h"
 /**
- * reset_to_98 -a functionthat takes a pointer to an int
- * @n: puntero
+ * reset_to_98 -a function that takes a pointer to an int
+ * @n: an integer input pointer
  * Return: (0)
  */
 void reset_to_98(int *n)
