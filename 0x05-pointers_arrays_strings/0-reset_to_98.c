@@ -1,4 +1,4 @@
-nclude "main.h"
+include "main.h"
 /**
  * reset_to_98 -a functionthat takes a pointer to an int
  * @n: puntero
