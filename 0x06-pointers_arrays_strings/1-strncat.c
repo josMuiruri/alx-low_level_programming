@@ -17,6 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 	/* navigate to the end of dest */
 	while (*dest)
 		dest++;
+
 	/* append at most n characters to src */
 	while (*src && (i < n))
 	{
