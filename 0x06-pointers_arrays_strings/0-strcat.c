@@ -13,7 +13,7 @@ char *_strcat(char *dest, char *src)
 {
 	char *new_dest = dest;
 
-	/*navigate to the end of dest */
+	/* navigate to the end of dest */
 	while (*dest)
 		dest++;
 
