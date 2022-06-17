@@ -1,32 +1,42 @@
 #include "main.h"
 /**
- * cap_string - check description
- * Description: capitalizes all words of a string
- * @str: input
- * Return: 0
+ * cap_string - capitalizes all words of a string
+ * @n: input value
+ *
+ *
+ * Return: string
  */
-
-char *cap_string(char *str)
+char *cap_string(char *n)
 {
-	int i, j;
-
-	char spe[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-
-	for (i = 0; str[i] != '\0'; i++)
+	int i;
+	
+	i = 0;
+	if (n[0] >= 'a' && n[0] <= 'z')
 	{
-		if (i == 0 && str[i] >= 'a' && str[i] <= 'z')
-			str[i] -= 32;
-
-		for (j = 0; j < 13; j++)
+		n[0] = n[0] - 32;
+	}
+	for (i = 0; n[i] != '\0'; i++)
+	{
+		switch (n[i])
 		{
-			if (str[i] == spe[j])
-			{
-				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+			case ',':
+			case ';':
+			case '.':
+			case '!':
+			case '?':
+			case '"':
+			case '(':
+			case ')':
+			case '{':
+			case '}':
+			case ' ':
+			case '\n':
+			case '\t':
+				if (n[i + 1] > 96 && n[i + 1] < 123)
 				{
-					str[i + 1] -= 32;
+					n[i + 1] = n[i + 1] - 32;
 				}
-			}
 		}
 	}
-	return (str);
+	return (n);
 }
