@@ -7,6 +7,7 @@
  * @argv: arguments passed
  * Return: 0
  */
+
 int main(int argc, char **argv)
 {
 	int coins = 0, n;
@@ -17,25 +18,25 @@ int main(int argc, char **argv)
 		if (n < 0)
 		{
 			printf("0\n");
-		}
-		else
-		{
-			while (n != 0)
-			{
-				if (n - 25 >= 0)
-					n -= 25;
-				else if (n - 10 >= 0)
-					n -= 10;
-				else if (n - 5 >= 0)
-					n -= 5;
-				else if (n - 2 >= 0)
-					n -= 2;
-				else if (n - 1 >= 0)
-					n -= 1;
-				coins++;
-			}
-			printf("%d\n", coins);
-		}
+	}
+	else
+	{
+	while (n != 0)
+	{
+	if (n - 25 >= 0)
+	n -= 25;
+	else if (n - 10 >= 0)
+	n -= 10;
+	else if (n - 5 >= 0)
+	n -= 5;
+	else if (n - 2 >= 0)
+	n -= 2;
+	else if (n - 1 >= 0)
+	n -= 1;
+	coins++;
+	}
+		printf("%d\n", coins);
+	}
 	}
 	else
 	{
